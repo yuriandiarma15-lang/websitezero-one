@@ -313,6 +313,29 @@
     color:var(--gold-1); font-weight:700; margin-bottom:10px;
   }
   .broker-txt p{ color:var(--ivory-dim); font-size:14.5px; line-height:1.75; max-width:560px; }
+  .broker-link{
+    color: var(--gold-1);
+    transition: color .2s ease;
+    border-bottom: 1px solid transparent;
+  }
+  .broker-link:hover{ color: var(--gold-2); border-bottom-color: var(--gold-2); }
+  .broker-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    margin-top:20px;
+    background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
+    color:#100c05; font-weight:800; font-size:13.5px; letter-spacing:0.02em;
+    padding:13px 24px; border-radius:2px;
+    box-shadow: 0 8px 24px -10px var(--gold-glow);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .broker-cta:hover{ transform:translateY(-2px); box-shadow:0 12px 30px -8px var(--gold-glow); }
+  .broker-cta .arrow{ transition: transform .25s ease; }
+  .broker-cta:hover .arrow{ transform: translateX(3px); }
+  .broker-note{
+    margin-top:16px; font-size:12.5px; color: var(--ivory-dim);
+    font-style:italic;
+  }
+  .broker-note strong{ color: var(--gold-2); font-style:normal; }
 
   /* ---------- TESTIMONI ---------- */
   .testimoni-grid{
@@ -528,8 +551,10 @@
     <img src="assets/logo-hfm.jpg" alt="Logo HFM Broker" class="broker-logo">
     <div class="broker-txt">
       <div class="eyebrow" style="margin-bottom:10px;">Broker Resmi Rekomendasi</div>
-      <h3>HFM.Market.asia</h3>
+      <h3><a href="https://hfm.market.asia" target="_blank" rel="noopener" class="broker-link">HFM.Market.asia</a></h3>
       <p>Kami menggunakan dan merekomendasikan HFM sebagai broker resmi untuk seluruh member Zero One Legacy — regulasi jelas, eksekusi cepat, dan mendukung strategi trading yang kami ajarkan.</p>
+      <a href="https://hfm.market.asia" target="_blank" rel="noopener" class="broker-cta">Daftar Link Resmi HFM Disini <span class="arrow">→</span></a>
+      <p class="broker-note">Atau buka browser / Google di HP maupun laptop Anda, lalu ketik <strong>HFM.Market.asia</strong></p>
     </div>
   </div>
 </section>
